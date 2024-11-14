@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <h1>PostBox</h1>
-        <nav>
-          <button onclick="toggleTheme()">Toggle Theme</button>
-        </nav>
-    </div>
+        <button onclick="toggleTheme()">🌙</button>
+    </header>
     
-    <div class="feed">
-        <div class="create-post">
-            <textarea id="postText" placeholder="What's on your mind?"></textarea>
+    <main class="feed">
+        <section class="create-post">
+            <textarea id="postText" placeholder="Share something..."></textarea>
             <input type="file" id="postImage" accept="image/*">
-            <button onclick="createPost()">Post</button>
-        </div>
+            <button onclick="createPost()">Share</button>
+        </section>
         
-        <div id="posts-container"></div>
-    </div>
+        <section id="posts-container"></section>
+    </main>
 
     <script src="app.js"></script>
 </body>
